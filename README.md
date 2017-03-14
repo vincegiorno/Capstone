@@ -1,9 +1,9 @@
-The four datasets cited in the proposal all have associated hyperlinks, but I will list them here:
+This project attempts to identify predictors of high rates of low birth weight in US counties based on available national data contained in various governmental datasets. These are detailed in the report, with links. All the datasets used are in the `/datasets` directory. Related descriptive files and the original dataset files, if these were not in CSV format, are in the `/extra` subdirectory, which contains an `unused` subdirectory that holds files downloded as part of the datasets but not used.
 
-+ [Community Health Status Indicators to Combat Obesity, Heart Disease and Cancer](https://www.healthdata.gov/dataset/community-health-status-indicators-chsi-combat-obesity-heart-disease-and-cancer/resource), published by the Centers for Disease Control.
-
-+ [Environmental Quality Index](https://edg.epa.gov/data/Public/ORD/NHEERL/EQI), published by the Environmental protection Agency.
-
-+ [Poverty Estimates](http://www.ers.usda.gov/webdocs/DataFiles/CountyLevel_Data_Sets_Download_Data__18026//PovertyEstimates.xls), published by the US Department of Agriculture.
-
-+ [Education](http://www.ers.usda.gov/webdocs/DataFiles/CountyLevel_Data_Sets_Download_Data__18026//Education.xls), also published by the USDA.
+All the project code in the Jupyter notebook is written in Python 2.7. The following packages are used, and so need to be available in the environment in order to run the code:
++ pandas (general data manipulation)
++ numpy (general math and array handling)
++ seaborn (`heatmap`) 
++ matplotlib (data distribution and residuals plots)
++ statsmodels (`variance_inflation_factor` in `stats.outliers_influence` module)
++ sklearn (various algorithms and auxiliary functions)
